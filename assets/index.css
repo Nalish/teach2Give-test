@@ -1,0 +1,58 @@
+body{
+display: flex;
+    font-family: 'Roboto Condensed';
+    background-image: url('background-pattern-desktop.svg');
+    background-repeat:no-repeat;
+    background-color:rgba(206, 161, 206, 0.661);
+    justify-content: center;
+}
+.faq-card{
+    background-color: whitesmoke;
+    max-width: 500px;
+    padding: 10px 50px 50px;
+   justify-content: center;
+    border-radius: 15px;
+  margin-top: 10%;
+   
+
+}
+h1{
+    font-size: 50px;
+}
+
+
+.faq-item {
+    border-bottom: 1px solid #ddd;
+  }
+
+  .faq-item:last-child {
+    border-bottom: none;
+  }
+  
+
+
+  label,input {
+    display: block;
+    padding: 15px 20px;
+    cursor: pointer;
+    background: #f9f9f9;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+
+  label:hover {
+    background-color: #f1f1f1;
+  }
+
+  .faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 20px;
+    background: #fff;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+  }
+
+  input[type="radio"]:checked + label + .faq-answer {
+    max-height: 200px;
+    padding: 15px 20px;
+  }
